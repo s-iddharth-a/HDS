@@ -3,115 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Design Solutions - Customer Order Form</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet for styling -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            font-size: 24px;
-        }
-        .form-container {
-            width: 80%;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: white;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-        .form-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        label {
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: block;
-        }
-        input, select, button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .footnote {
-            font-size: 14px;
-            color: #888;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Home Design Solutions - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        Home Design Solutions - Customer Order Form
+        Home Design Solutions
     </header>
 
-    <div class="form-container">
-        <h2>Place Your Order</h2>
-        <form>
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name">
+    <div class="home-container">
+        <h2>Welcome to Home Design Solutions</h2>
+        <p>Explore our services, place an order, or learn more about our company!</p>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name">
+        <div class="home-links">
+            <div class="home-link-item">
+                <a href="customer-order.html">Customer Order Form</a>
+                <p>Place your order for remodeling services here.</p>
+            </div>
 
-            <label for="address">Street Address:</label>
-            <input type="text" id="address" name="address" placeholder="Enter Your Street Address">
+            <div class="home-link-item">
+                <a href="faq.html">FAQ</a>
+                <p>Find answers to your questions about our services.</p>
+            </div>
 
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" placeholder="Enter Your City">
+            <div class="home-link-item">
+                <a href="about.html">About Us</a>
+                <p>Learn more about the history of Home Design Solutions.</p>
+            </div>
 
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state" placeholder="Enter Your State">
-
-            <label for="zip">Zip Code:</label>
-            <input type="text" id="zip" name="zip" placeholder="Enter Your Zip Code">
-
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" placeholder="Enter Your Phone Number">
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
-
-            <label for="service">Service Needed:</label>
-            <select id="service" name="service">
-                <option value="kitchenRemodel">Kitchen Remodel</option>
-                <option value="kitchenInstallation">Kitchen Installation</option>
-                <option value="bathroomRemodel">Bathroom Remodel</option>
-                <option value="bathroomInstallation">Bathroom Installation</option>
-            </select>
-
-            <label for="paymentMethod">Payment Method:</label>
-            <select id="paymentMethod" name="paymentMethod">
-                <option value="creditCard">Credit Card</option>
-                <option value="paypal">PayPal</option>
-                <option value="bankTransfer">Bank Transfer</option>
-            </select>
-
-            <button type="submit">Submit Order</button>
-        </form>
-
-        <div class="footnote">
-            Once your order is placed, please check your email over the next 2 business days as we will contact you regarding your HDS order! 
-            If you have any additional questions, please view our FAQ page, or email <a href="mailto:support@hdssolutions.com">support@hdssolutions.com</a> for any other questions.
+            <div class="home-link-item">
+                <a href="catalogue.html">Catalogue</a>
+                <p>Browse our available services and remodeling options.</p>
+            </div>
         </div>
     </div>
 </body>
