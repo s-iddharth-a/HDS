@@ -51,6 +51,12 @@
         button:hover {
             background-color: #45a049;
         }
+        .footnote {
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -61,22 +67,37 @@
     <div class="form-container">
         <h2>Place Your Order</h2>
         <form>
-            <label for="customerName">Customer Name:</label>
-            <input type="text" id="customerName" name="customerName" placeholder="Enter Your Full Name">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name">
 
-            <label for="product">Product:</label>
-            <select id="product" name="product">
-                <option value="1">Sofa</option>
-                <option value="2">Dining Table</option>
-                <option value="3">Chairs</option>
-                <option value="4">Coffee Table</option>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name">
+
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter Your Street Address">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter Your City">
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="Enter Your State">
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="Enter Your Zip Code">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter Your Phone Number">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Address">
+
+            <label for="service">Service Needed:</label>
+            <select id="service" name="service">
+                <option value="kitchenRemodel">Kitchen Remodel</option>
+                <option value="kitchenInstallation">Kitchen Installation</option>
+                <option value="bathroomRemodel">Bathroom Remodel</option>
+                <option value="bathroomInstallation">Bathroom Installation</option>
             </select>
-
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter Quantity">
-
-            <label for="address">Shipping Address:</label>
-            <input type="text" id="address" name="address" placeholder="Enter Your Shipping Address">
 
             <label for="paymentMethod">Payment Method:</label>
             <select id="paymentMethod" name="paymentMethod">
@@ -87,6 +108,11 @@
 
             <button type="submit">Submit Order</button>
         </form>
+
+        <div class="footnote">
+            Once your order is placed, please check your email over the next 2 business days as we will contact you regarding your HDS order! 
+            If you have any additional questions, please view our FAQ page, or email <a href="mailto:support@hdssolutions.com">support@hdssolutions.com</a> for any other questions.
+        </div>
     </div>
 </body>
 </html>
