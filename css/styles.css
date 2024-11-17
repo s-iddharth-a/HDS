@@ -4,23 +4,26 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
+/* Header Styles */
 header {
-    background-color: #2196F3;
+    background-color: #4CAF50;
     color: white;
     padding: 15px 0;
     text-align: center;
     font-size: 24px;
 }
 
-/* Home Page Styles */
+/* Home Page */
 .home-container {
     width: 80%;
     margin: 50px auto;
     padding: 30px;
     background-color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .home-container h2 {
@@ -30,7 +33,7 @@ header {
 
 .home-links {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -41,6 +44,7 @@ header {
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .home-link-item:hover {
@@ -49,7 +53,7 @@ header {
 
 .home-link-item a {
     text-decoration: none;
-    color: #2196F3;
+    color: #4CAF50;
     font-size: 18px;
     font-weight: bold;
 }
@@ -59,65 +63,193 @@ header {
     color: #555;
 }
 
-/* Form Styles */
-.form-container {
-    width: 60%;
-    margin: 50px auto;
+/* Form and Input Styles */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
     padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Customer Statement Page */
+.statement-container {
     background-color: white;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container h2 {
+.statement-container h1,
+.statement-container h2 {
     text-align: center;
+}
+
+.orders table {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.orders th,
+.orders td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.orders th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Receipt Styles */
+.receipt-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-container h1 {
+    text-align: center;
+}
+
+.products table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.products th, .products td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.products th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Supplier Management Page */
+.form-container {
     margin-bottom: 20px;
 }
 
 .form-container form {
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container label {
-    margin: 10px 0 5px;
-    font-weight: bold;
+.form-container input[type="text"] {
+    margin-bottom: 10px;
 }
 
-.form-container input,
-.form-container select {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.form-container button {
-    padding: 10px 15px;
-    background-color: #2196F3;
+.form-container button[type="submit"] {
+    background-color: #4CAF50;
     color: white;
-    border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.form-container button:hover {
-    background-color: #1976D2;
+.form-container button[type="submit"]:hover {
+    background-color: #45a049;
 }
 
-/* FAQ & About & Catalogue Styles */
-.faq-container, .about-container, .catalogue-container {
-    width: 80%;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+.supplier-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
 }
 
-.faq-item, .service-item {
-    margin-bottom: 20px;
+.supplier-table th, .supplier-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
-h3 {
-    color: #2196F3;
+.supplier-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Employee Report Page */
+.employee-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.employee-table th, .employee-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.employee-table th {
+    background-color: #4CAF50;
+    color: white;
 }
