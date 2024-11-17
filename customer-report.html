@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Report</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Report</h1>
+    </header>
+
+    <div class="container">
+        <div class="filter-container">
+            <form action="/filter_customer_report" method="GET">
+                <label for="dateRange">Date Range:</label>
+                <input type="date" id="startDate" name="startDate" class="input-field">
+                to
+                <input type="date" id="endDate" name="endDate" class="input-field"><br><br>
+                
+                <label for="customerType">Customer Type:</label>
+                <select id="customerType" name="customerType" class="input-field">
+                    <option value="all">All</option>
+                    <option value="residential">Residential</option>
+                    <option value="business">Business</option>
+                </select><br><br>
+                
+                <button type="submit" class="btn">Filter Report</button>
+            </form>
+        </div>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Contact Info</th>
+                    <th>Customer Type</th>
+                    <th>Product ID</th>
+                    <th>Product Description</th>
+                    <th>Quantity Purchased</th>
+                    <th>Date of Purchase</th>
+                    <th>Total Amount Spent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C001</td>
+                    <td>John Doe</td>
+                    <td>123-456-7890, john.doe@example.com, 123 Main St, Phoenix, AZ</td>
+                    <td>Residential</td>
+                    <td>P001</td>
+                    <td>Kitchen Sink</td>
+                    <td>1</td>
+                    <td>2024-01-15</td>
+                    <td>$150.00</td>
+                </tr>
+                <!-- Additional rows can be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
