@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -13,67 +13,29 @@ header {
     color: white;
     padding: 15px 0;
     text-align: center;
-    font-size: 24px;
 }
 
-/* Home Page */
-.home-container {
-    width: 80%;
+/* Login Page Styles */
+.login-container {
+    width: 400px;
     margin: 50px auto;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.home-container h2 {
+.login-container h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.home-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.home-link-item {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.home-link-item:hover {
-    background-color: #f1f1f1;
-}
-
-.home-link-item a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.home-link-item p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* Form and Input Styles */
-input[type="text"],
-input[type="date"],
-select,
-textarea {
+input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
 }
 
 button[type="submit"] {
@@ -82,16 +44,57 @@ button[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Table Styles */
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Portal Page Styles */
+.portal-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.portal-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.portal-link-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.portal-link-item:hover {
+    background-color: #f1f1f1;
+}
+
+.portal-link-item a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+/* Report Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -109,147 +112,10 @@ th {
     color: white;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f1f1f1;
-}
-
 /* Footer Styles */
 footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 14px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Customer Statement Page */
-.statement-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.statement-container h1,
-.statement-container h2 {
-    text-align: center;
-}
-
-.orders table {
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    width: 100%;
-}
-
-.orders th,
-.orders td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.orders th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Receipt Styles */
-.receipt-container {
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.receipt-container h1 {
-    text-align: center;
-}
-
-.products table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.products th, .products td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.products th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Supplier Management Page */
-.form-container {
-    margin-bottom: 20px;
-}
-
-.form-container form {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-container input[type="text"] {
-    margin-bottom: 10px;
-}
-
-.form-container button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.form-container button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-.supplier-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-.supplier-table th, .supplier-table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-
-.supplier-table th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Employee Report Page */
-.employee-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-.employee-table th, .employee-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.employee-table th {
-    background-color: #4CAF50;
-    color: white;
 }
