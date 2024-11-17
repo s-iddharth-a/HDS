@@ -4,21 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Design Solutions - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .home-container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .home-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .home-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .home-link-item {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .home-link-item:hover {
+            background-color: #f1f1f1;
+        }
+        .home-link-item a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .home-link-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Portal Buttons */
+        .portal-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .portal-buttons a {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .portal-buttons a:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Home Design Solutions</h1>
+        Home Design Solutions
     </header>
 
     <div class="home-container">
         <h2>Welcome to Home Design Solutions</h2>
-        
-       
-        <img src="homedesign.jpg" alt="Home Design Solutions" style="display: block; margin: 0 auto; width: 100%; height: auto; max-width: 600px;">
-        
-    
+        <p>Explore our services, place an order, or learn more about our company!</p>
 
+        <!-- Original Home Links -->
         <div class="home-links">
             <div class="home-link-item">
                 <a href="customer-order.html">Customer Order Form</a>
@@ -39,6 +112,17 @@
                 <a href="catalogue.html">Catalogue</a>
                 <p>Browse our available services and remodeling options.</p>
             </div>
+        </div>
+
+        <!-- Portal Buttons for Reports and Management -->
+        <div class="portal-buttons">
+            <a href="product-report.html">Product Report</a>
+            <a href="customer-report.html">Customer Report</a>
+            <a href="sales-summary-report.html">Sales Summary Report</a>
+            <a href="employee-report.html">Employee Report</a>
+            <a href="receipt.html">Receipt</a>
+            <a href="customer-statement.html">Customer Statement</a>
+            <a href="supplier-management.html">Supplier Management</a>
         </div>
     </div>
 </body>
