@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Report</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Report</h1>
+    </header>
+
+    <div class="container">
+        <div class="filter-container">
+            <form action="/filter_employee_report" method="GET">
+                <label for="jobRole">Filter by Job Role:</label>
+                <input type="text" id="jobRole" name="jobRole" placeholder="e.g., Sales Manager" class="input-field">
+                <br><br>
+                
+                <label for="department">Filter by Department:</label>
+                <select id="department" name="department" class="input-field">
+                    <option value="all">All</option>
+                    <option value="sales">Sales</option>
+                    <option value="support">Customer Support</option>
+                    <option value="it">IT Support</option>
+                </select><br><br>
+                
+                <button type="submit" class="btn">Filter Report</button>
+            </form>
+        </div>
+        
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Job Role</th>
+                    <th>Department</th>
+                    <th>Pay Rate</th>
+                    <th>Date Hired</th>
+                    <th>Contact Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>E001</td>
+                    <td>Alice Johnson</td>
+                    <td>Sales Manager</td>
+                    <td>Sales</td>
+                    <td>$50/hour</td>
+                    <td>2023-01-01</td>
+                    <td>alice.j@example.com, 555-1234</td>
+                </tr>
+                <!-- Additional rows can be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
