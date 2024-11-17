@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Statement</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="statement-container">
+            <h1>Customer Statement</h1>
+            <h2>Home Design Solutions</h2>
+
+            <div class="details">
+                <p><strong>Statement Date:</strong> 2024-02-28</p>
+                <p><strong>Customer Information:</strong> Jane Smith, 456 Oak St, Tucson, AZ</p>
+                <p><strong>Beginning Balance:</strong> $150.00</p>
+            </div>
+
+            <div class="orders">
+                <h3>Order Details</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Order Date</th>
+                            <th>Order Amount</th>
+                            <th>Payment Date</th>
+                            <th>Payment Amount</th>
+                            <th>Balance Due</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>O002</td>
+                            <td>2024-02-10</td>
+                            <td>$300.00</td>
+                            <td>2024-02-15</td>
+                            <td>$150.00</td>
+                            <td>$150.00</td>
+                        </tr>
+                        <!-- Additional rows go here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>Total Balance Due:</strong> $150.00</p>
+            <p><strong>Terms:</strong> Payment due in 30 days. Late fees apply after 2024-03-15.</p>
+            <p><strong>Home Design Solutions Contact Information:</strong> Phone: 123-456-7890, Email: info@hds.com</p>
+        </div>
+    </div>
+</body>
+</html>
