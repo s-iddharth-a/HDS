@@ -86,8 +86,10 @@ header {
 
 /* Centered Items in Home Links */
 .centered-item {
-    grid-column: span 2; /* Makes the centered items take up two columns */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures text is centered */
 }
 
 /* Form Styles */
@@ -159,6 +161,10 @@ h3 {
     background-color: #2196F3;
     color: white;
     padding: 10px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 100%;
 }
 
 .footer a {
