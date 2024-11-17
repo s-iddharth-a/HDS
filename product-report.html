@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Report</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Report</h1>
+    </header>
+
+    <div class="container">
+        <div class="filter-container">
+            <form action="/filter_product_report" method="GET">
+                <label for="category">Filter by Category:</label>
+                <select id="category" name="category" class="input-field">
+                    <option value="all">All</option>
+                    <option value="cabinets">Cabinets</option>
+                    <option value="sinks">Sinks</option>
+                    <option value="lighting">Lighting</option>
+                </select><br><br>
+                <button type="submit" class="btn">Filter Report</button>
+            </form>
+        </div>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Description</th>
+                    <th>Total Sold</th>
+                    <th>Stock Level</th>
+                    <th>Price</th>
+                    <th>Total Sales Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P001</td>
+                    <td>Kitchen Sink</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>$150.00</td>
+                    <td>$3,000.00</td>
+                </tr>
+                <!-- Additional rows can be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
