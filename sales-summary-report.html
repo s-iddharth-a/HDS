@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Summary Report</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sales Summary Report</h1>
+    </header>
+
+    <div class="container">
+        <div class="filter-container">
+            <form action="/filter_sales_summary" method="GET">
+                <label for="dateRange">Date Range:</label>
+                <input type="date" id="startDate" name="startDate" class="input-field">
+                to
+                <input type="date" id="endDate" name="endDate" class="input-field"><br><br>
+                
+                <button type="submit" class="btn">Filter Report</button>
+            </form>
+        </div>
+        
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Product(s)</th>
+                    <th>Order Date</th>
+                    <th>Total Amount</th>
+                    <th>Payment Method</th>
+                    <th>Order Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>O001</td>
+                    <td>John Doe</td>
+                    <td>Kitchen Sink</td>
+                    <td>2024-01-15</td>
+                    <td>$150.00</td>
+                    <td>Credit Card</td>
+                    <td>Completed</td>
+                </tr>
+                <!-- Additional rows can be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
