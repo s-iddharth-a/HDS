@@ -84,6 +84,12 @@ header {
     color: #555;
 }
 
+/* Centered Items in Home Links */
+.centered-item {
+    grid-column: span 2; /* Makes the centered items take up two columns */
+    text-align: center;
+}
+
 /* Form Styles */
 .form-container {
     width: 60%;
@@ -145,4 +151,17 @@ header {
 
 h3 {
     color: #2196F3;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
 }
