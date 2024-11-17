@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Home Design Solutions</h1>
+    </header>
+
+    <!-- Employee Login Form -->
     <div class="login-container">
-        <h2>HDS Employee Portal Login</h2>
-
-        <form action="employee-portal.html" method="POST"> <!-- For Employee -->
+        <h2 class="centered">Employee Portal Login</h2>
+        <form action="employee-portal.html" method="GET" class="login-form">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-
+            <input type="text" id="username" name="username" required>
+            
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
+            <input type="password" id="password" name="password" required>
 
             <button type="submit">Login</button>
         </form>
-
-        <p>Forgot your username or password? <a href="mailto:admin@homedesign.com">Contact your admin</a></p>
     </div>
+
+    <!-- Supplier Login Form -->
+  
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Contact your admin if you forgot your username or password.</p>
+    </footer>
 </body>
 </html>
