@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HDS 2-Factor Authentication</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // JavaScript to validate the 2FA code
+        function validate2FACode(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            const authCode = document.getElementById('auth-code').value;
+
+            // Example hardcoded 4-digit code for testing purposes
+            const validCode = '1234'; 
+
+            if (authCode === validCode) {
+                // Redirect to the employee portal if the code matches
+                window.location.href = 'employee-portal.html';
+            } else {
+                alert('Invalid code. Please try again.');
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -15,7 +33,7 @@
         <h2>2-Factor Authentication</h2>
         <p>Check your employee email for the login code.</p>
         
-        <form action="employee-portal.html" method="POST" class="login-form">
+        <form onsubmit="validate2FACode(event)" class="login-form">
             <label for="auth-code">Enter 4-Digit Code:</label>
             <input type="text" id="auth-code" name="auth-code" maxlength="4" pattern="\d{4}" required>
             
