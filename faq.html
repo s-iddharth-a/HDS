@@ -11,6 +11,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-image: url('background-image.jpg'); /* Set the background image */
+            background-size: cover;
+            background-position: center;
             color: #fff; /* White text for contrast */
         }
 
@@ -31,29 +34,12 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
-            background-image: url('happy_couple.png'); /* Set the happy couple image as the background */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            position: relative;
-        }
-
-        /* Overlay to ensure text readability */
-        .faq-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the FAQ section */
             border-radius: 10px;
         }
 
         .faq-content {
             width: 100%;
-            z-index: 1; /* Ensure the content is above the overlay */
         }
 
         h2 {
@@ -73,7 +59,6 @@
             margin-bottom: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            z-index: 1;
         }
 
         .faq-item h3 {
@@ -97,9 +82,16 @@
             display: block;
         }
 
-        /* Styling for the happy couple image */
         .faq-image {
-            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .faq-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -189,6 +181,10 @@
                 <p>HDS provides cabinets for both remodeling and new construction, working with remodelers and builders to fit the budget and space requirements.</p>
             </div>
 
+        </div>
+
+        <div class="faq-image">
+            <img src="happy_couple.png" alt="Happy Couple Looking at a Computer">
         </div>
     </div>
 
