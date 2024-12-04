@@ -7,8 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
         }
 
         .brand-list {
@@ -16,14 +24,23 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             justify-items: center;
+            padding: 20px;
         }
 
         .brand-item {
-            padding: 20px;
             background-color: #f4f4f4;
             border-radius: 10px;
+            overflow: hidden;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .brand-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
         }
 
         .brand-item a {
@@ -33,6 +50,7 @@
             background-color: #333;
             border-radius: 5px;
             display: inline-block;
+            margin-top: 10px;
         }
 
         .brand-item a:hover {
@@ -46,24 +64,24 @@
 </head>
 <body>
     <header>
-        <h1>Bathroom Installation - Affiliated Brands</h1>
+        Home Design Solutions - Bathroom Installation Brands
     </header>
 
     <div class="brand-list">
         <div class="brand-item">
-            <h3>Kohler</h3>
+            <img src="kohler.png" alt="Kohler">
             <a href="https://www.us.kohler.com/" target="_blank">Visit Kohler</a>
         </div>
         <div class="brand-item">
-            <h3>Delta Faucets</h3>
+            <img src="delta.png" alt="Delta Faucets">
             <a href="https://www.deltafaucet.com/" target="_blank">Visit Delta Faucets</a>
         </div>
         <div class="brand-item">
-            <h3>Moen</h3>
+            <img src="moen.png" alt="Moen">
             <a href="https://www.moen.com/" target="_blank">Visit Moen</a>
         </div>
         <div class="brand-item">
-            <h3>American Standard</h3>
+            <img src="american_standard.png" alt="American Standard">
             <a href="https://www.americanstandard-us.com/" target="_blank">Visit American Standard</a>
         </div>
     </div>
