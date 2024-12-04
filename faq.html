@@ -11,46 +11,36 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-image: url('background-image.jpg'); /* Set the background image */
-            background-size: cover;
-            background-position: center;
-            color: #fff; /* White text for contrast */
+            display: flex;
+            justify-content: center;  /* Center horizontally */
+            align-items: center;      /* Center vertically */
+            height: 100vh;            /* Take full height of the viewport */
+            background-color: #f0f0f0; /* Optional background color for contrast */
         }
 
         header {
-            background-color: rgba(51, 51, 51, 0.8); /* Dark background with transparency */
+            background-color: #333;
             color: white;
             padding: 20px;
             text-align: center;
             font-size: 24px;
-            margin-bottom: 20px;
         }
 
         .faq-container {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;    /* Center the content */
+            justify-content: center; /* Center content vertically */
             max-width: 1200px;
-            margin: auto;
+            width: 100%;            /* Ensure it takes up full width */
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the FAQ section */
-            border-radius: 10px;
+            background-color: #fff;  /* Set background color for FAQ container */
+            border-radius: 10px;     /* Optional rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
 
         .faq-content {
-            width: 100%;
-        }
-
-        h2 {
-            text-align: center;
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            border: 2px solid #333;
-            border-radius: 5px;
-            background-color: #f4f4f4;
-            font-size: 24px;
-            font-weight: bold;
+            width: 100%; /* Ensures that the content is full width within the container */
         }
 
         .faq-item {
@@ -80,18 +70,6 @@
 
         .faq-item.open p {
             display: block;
-        }
-
-        .faq-image {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .faq-image img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 10px;
-            object-fit: cover;
         }
     </style>
 </head>
@@ -183,9 +161,7 @@
 
         </div>
 
-        <div class="faq-image">
-            <img src="happy_couple.png" alt="Happy Couple Looking at a Computer">
-        </div>
+       
     </div>
 
     <script>
