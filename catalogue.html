@@ -25,12 +25,14 @@
             padding: 20px;
             max-width: 1200px;
             margin: auto;
+            text-align: center;
         }
 
         .service-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr 1fr;
             gap: 20px;
+            justify-items: center;
         }
 
         .service-item {
@@ -39,6 +41,9 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            width: 90%;
+            max-width: 400px;
+            text-align: left;
         }
 
         .service-item img {
@@ -55,6 +60,20 @@
             margin: 15px;
             font-size: 16px;
             color: #555;
+        }
+
+        .service-item a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .service-item a:hover {
+            background-color: #555;
         }
 
         .service-item:hover {
@@ -75,24 +94,28 @@
                 <img src="kitchen_remodel.png" alt="Kitchen Remodel">
                 <h3>Kitchen Remodel</h3>
                 <p>Full kitchen redesign, including cabinetry, appliances, and countertops.</p>
+                <a href="kitchen_remodel.html">View Kitchen Appliances & Prices</a>
             </div>
 
             <div class="service-item">
                 <img src="bathroom_remodel.png" alt="Bathroom Remodel">
                 <h3>Bathroom Remodel</h3>
                 <p>Complete bathroom renovations, including showers, tubs, sinks, and flooring.</p>
+                <a href="bathroom_remodel.html">View Bathroom Appliances & Prices</a>
             </div>
 
             <div class="service-item">
                 <img src="kitchen_installation.png" alt="Kitchen Installation">
                 <h3>Kitchen Installation</h3>
                 <p>Professional kitchen installation for newly designed spaces.</p>
+                <a href="kitchen_installation.html">View Kitchen Brands</a>
             </div>
 
             <div class="service-item">
                 <img src="bathroom_installation.png" alt="Bathroom Installation">
                 <h3>Bathroom Installation</h3>
                 <p>Expert installation services for bathroom designs and renovations.</p>
+                <a href="bathroom_installation.html">View Bathroom Brands</a>
             </div>
         </div>
     </div>
