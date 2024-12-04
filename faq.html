@@ -11,11 +11,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            display: flex;
-            justify-content: center;  /* Center horizontally */
-            align-items: center;      /* Center vertically */
-            height: 100vh;            /* Take full height of the viewport */
-            background-color: #f0f0f0; /* Optional background color for contrast */
         }
 
         header {
@@ -28,20 +23,21 @@
 
         .faq-container {
             display: flex;
-            flex-direction: column; /* Stack items vertically */
-            align-items: center;    /* Center the content */
-            justify-content: center; /* Center content vertically */
             max-width: 1200px;
-            width: 100%;            /* Ensure it takes up full width */
+            margin: auto;
             padding: 20px;
-            background-color: #fff;  /* Set background color for FAQ container */
-            border-radius: 10px;     /* Optional rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
 
         .faq-content {
-            width: 100%; /* Ensures that the content is full width within the container */
+            flex: 2;
         }
+
+        .faq-image {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+   
 
         .faq-item {
             background-color: #f4f4f4;
@@ -161,7 +157,7 @@
 
         </div>
 
-       
+    
     </div>
 
     <script>
